@@ -20,8 +20,8 @@
 
 <body>
   <header>
-    <!-- <div class="contenedor"> -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="contenedor">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             <!-- Carlos Yanez -->
@@ -49,15 +49,17 @@
 
       <div class="container mt-3">
         <div class="row">
-          <div class="col d-flex justify-content-center mb-3">
+          <div class="col d-flex justify-content-center align-items-center mb-3">
             <div class="contenedor-texto">
-              <h1 class="nombre text-center">Carlos Yanez</h1>
-              <h2 class="profesion text-center">Desarrollador Web</h2>
+              <div class="texto">
+                <h1 class="nombre text-center fw-400 mb-1 fs-1">Carlos Yanez</h1>
+                <h2 class="profesion text-center fw-300 m-0 fs-4">Desarrollador Web</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    <!-- </div> -->
+    </div>
   </header>
 
   <section class="main">
@@ -67,24 +69,24 @@
           <img src="assets/imgs/yo 2.jpeg" alt="Carlos Yanez" width="115">
         </div>
   
-        <div class="texto">
-          <h3 class="titulo">Acerca de</h3>
-          <p>Me desempeño como desarrollador FrontEnd, encargado de construir y mantener sitios web con diseño responsivo,<br>
+        <div class="texto  color-gris fs-5 mt-5 mb-5 ">
+          <h3 class="titulo fs-1 lh-1 mb-5 fw-300 color-naranja">Acerca de</h3>
+          <p class="fw-600 lh-5">Me desempeño como desarrollador FrontEnd, encargado de construir y mantener sitios web con diseño responsivo,
             estos pueden ser dinamicos o estaticos según sea el requerimiento.</p>
         </div>
       </section>
     </div>
 
-    <section class="trabajos mb-3">
+    <section class="trabajos py-5">
       <div class="container">
-        <h3 class="titulo text-center mb-3">Trabajos</h3>
+        <h3 class="titulo text-center fs-2 lh-1 mb-5 fw-300 color-negrito">Trabajos</h3>
         <div class="row gx-3 gy-5">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100" style="width: 100%;">
               <img src="assets/imgs/prueba.png" class="card-img-top img-fluid" alt="Rio de Janeiro">
               <div class="card-body">
-                <p class="card-text r-light fz-20 c-negro text-center"><a href="#">Iguana Page</a></p>
-                <p class="r-light fz-16 c-gris mb-0 text-center">HTML - CSS -JS</p>              
+                <p class="card-text fw-700 text-center fs-6 mb-2"><a class="color-azul" href="#">Iguana Page</a></p>
+                <p class="text-center color-otro-gris fw-300 fs-6 mb-0">HTML - CSS -JS</p>              
               </div>
             </div>
           </div>
@@ -93,8 +95,8 @@
             <div class="card h-100" style="width: 100%;">
               <img src="assets/imgs/prueba.png" class="card-img-top img-fluid" alt="Rio de Janeiro">
               <div class="card-body">
-                <p class="card-text r-light fz-20 c-negro text-center"><a href="#">Iguana Page</a></p>
-                <p class="r-light fz-16 c-gris mb-0 text-center">HTML - CSS -JS</p>              
+                <p class="card-text fw-700 text-center fs-6 mb-2"><a class="color-azul" href="#">Iguana Page</a></p>
+                <p class="text-center color-otro-gris fw-300 fs-6 mb-0">HTML - CSS -JS</p>              
               </div>
             </div>
           </div>
@@ -103,8 +105,8 @@
             <div class="card h-100" style="width: 100%;">
               <img src="assets/imgs/prueba.png" class="card-img-top img-fluid" alt="Rio de Janeiro">
               <div class="card-body">
-                <p class="card-text r-light fz-20 c-negro text-center"><a href="#">Iguana Page</a></p>
-                <p class="r-light fz-16 c-gris mb-0 text-center">HTML - CSS -JS</p>              
+                <p class="card-text fw-700 text-center fs-6 mb-2"><a class="color-azul" href="#">Iguana Page</a></p>
+                <p class="text-center color-otro-gris fw-300 fs-6 mb-0">HTML - CSS -JS</p>              
               </div>
             </div>
           </div>
@@ -113,8 +115,8 @@
             <div class="card h-100" style="width: 100%;">
               <img src="assets/imgs/prueba.png" class="card-img-top img-fluid" alt="Rio de Janeiro">
               <div class="card-body">
-                <p class="card-text r-light fz-20 c-negro text-center"><a href="#">Iguana Page</a></p>
-                <p class="r-light fz-16 c-gris mb-0 text-center">HTML - CSS -JS</p>              
+                <p class="card-text fw-700 text-center fs-6 mb-2"><a class="color-azul" href="#">Iguana Page</a></p>
+                <p class="text-center color-otro-gris fw-300 fs-6 mb-0">HTML - CSS -JS</p>              
               </div>
             </div>
           </div>
@@ -124,10 +126,11 @@
 
   </section>
 
-  <footer>
-    <section class="contacto">
+  <footer class="">
+    <section class="contacto py-5">
       <div class="container">
-            <form action="">
+            <h3 class="titulo text-center fs-2 lh-1 mb-4 fw-300 color-negrito">Contacto</h3>
+            <form class="formulario" action="">
 
               <div class="row">
                 <div class="col-12 col-md-6 mb-3">
@@ -141,17 +144,17 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-12 mb-3">
+              <div class="row mb-4">
+                <div class="col-12 ">
                   <label for="mensaje" class="form-label">Mensaje</label>
-                  <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                  <textarea class="form-control text-area" name="mensaje" id="mensaje"></textarea>
                 </div>
               </div>
 
               <div class="row">
-                <div class="col-12 d-flex justify-content-center mb-3">
+                <div class="col-12 d-flex justify-content-center mb-4">
                   <!-- <div class=""> -->
-                    <button type="submit" class="btn btn-primary px-5 py-2">Enviar</button>
+                    <button type="submit" class="btn btn-dark px-5 py-2">Enviar</button>
                   <!-- </div> -->
                 </div>
               </div>
@@ -160,13 +163,13 @@
         </div>
       </section>
 
-      <section class="redes-sociales">
-        <div class="container">
-          <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
-          <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+      <section class="redes-sociales py-5">
+        <div class="container text-center d-flex justify-content-center">
+          <a href="#" class="twitter py-3 fs-2 mx-3"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="facebook py-3 fs-2 mx-3"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="youtube py-3 fs-2 mx-3"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="github py-3 fs-2 mx-3"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="instagram py-3 fs-2 mx-3"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </section>
   </footer>
